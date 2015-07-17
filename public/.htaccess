@@ -4,7 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-
+    Options +FollowSymLinks
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
