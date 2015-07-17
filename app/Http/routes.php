@@ -12,7 +12,7 @@
 */
 
 $app->get('/', function () use ($app) {
-    return "Hello";
+    return view('home');
 });
 
 $app->get('/password/{data:.*}', 'PasswordController@hashPassword');
