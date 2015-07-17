@@ -1,4 +1,4 @@
-## Lumen PHP Framework
+## Larapass
 
 This is a very small project that I made just to play with the Lumen framework. Is is quite simple - a single page with an input box that gives you the hashed value of a string.
 
