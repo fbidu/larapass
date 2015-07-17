@@ -15,7 +15,6 @@ $app->get('/', function () use ($app) {
     return "Hello";
 });
 
-$app->get('/password/{data}', function($data)
-    {
-        return Hash::make($data);
-    });
+$app->get('/password/{data:.*}', 'PasswordController@hashPassword');
+
+$app->get('/check/{password:.*}/{hash:.*}', 'PasswordController@checkPassword');
