@@ -2,6 +2,8 @@
 
 This is a very small project that I made just to play with the Lumen framework. Is is quite simple - a single page with an input box that gives you the hashed value of a string.
 
+You can see a hosted version of it [here](http://larapass.felipevr.com)
+
 ### Contributing
 
 If you want to take your time to suggest some feature or report a bug, just open an issue here on GitHub. If you want to change the code, just fork it and create a pull request.
