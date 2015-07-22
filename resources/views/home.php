@@ -21,7 +21,7 @@
                 <button class="btn btn-default" type="button" id="hash">Hash!</button>
             </span>
         </div>
-            <h3 id="hash-val"></h3>
+            <div><input type="text" id="hash-val" readonly="true" data-toggle="tooltip" data-trigger="focus" data-placement="bottom" title="Press CTRL+C to copy" /></div>
       </div>
 
       <footer class="footer">
@@ -37,9 +37,23 @@
         {
             $.get('password/'+$("#password").val(), {}, function(data)
                 {
-                    $("#hash-val").text(data);
+                    $("#hash-val").show();
+                    $("#hash-val").val(data);
+                    $("#hash-val").select();
+                    $("#hash-val").focus();
                 });
 
+        });
+
+        $("#hash-val").on("click", function()
+        {
+            this.select();
+        });
+
+        $(document).ready( function()
+        {
+            $('[data-toggle="tooltip"]').tooltip();
+            $("#hash-val").hide();
         });
     </script>
     </body>

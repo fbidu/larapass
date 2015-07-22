@@ -37,13 +37,15 @@ body {
 
 #hash-val
 {
+    background-color: #C02942;
     color: #542437;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
     max-width: 100%;
     font-family: monospace;
     font-size: 15px;
-    display: inline-block;
-    white-space: break-word;
-    word-wrap: break-word;
+    text-align: center;
 }
 
 #password
@@ -113,10 +115,11 @@ body {
 /* Styling the selection */
 ::selection
 {
-    background-color: rgba(236,208,120,.99)
+    background-color: rgba(236,208,120,.99);
 }
 
 ::-moz-selection
 {
-    background: #ECD078; /* Gecko Browsers */
+    background-color: rgba(236,208,120,.99);
 }
+
