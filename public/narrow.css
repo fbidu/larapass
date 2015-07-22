@@ -97,7 +97,6 @@ body {
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-right: 0;
     padding-left: 0;
@@ -123,3 +122,10 @@ body {
     background-color: rgba(236,208,120,.99);
 }
 
+.container
+{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
