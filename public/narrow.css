@@ -35,8 +35,14 @@ body {
     color: #C02942;
 }
 
-h3 {
+#hash-val
+{
     color: #542437;
+    max-width: 100%;
+    font-family: monospace;
+    font-size: 15px;
+    display: inline-block;
+    white-space: break-word;
     word-wrap: break-word;
 }
 
@@ -102,4 +108,15 @@ h3 {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Styling the selection */
+::selection
+{
+    background-color: rgba(236,208,120,.99)
+}
+
+::-moz-selection
+{
+    background: #ECD078; /* Gecko Browsers */
 }
