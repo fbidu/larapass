@@ -35,9 +35,17 @@ body {
     color: #C02942;
 }
 
-h3 {
+#hash-val
+{
+    background-color: #C02942;
     color: #542437;
-    word-wrap: break-word;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 100%;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
 }
 
 #password
@@ -89,7 +97,6 @@ h3 {
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-right: 0;
     padding-left: 0;
@@ -102,4 +109,23 @@ h3 {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Styling the selection */
+::selection
+{
+    background-color: rgba(236,208,120,.99);
+}
+
+::-moz-selection
+{
+    background-color: rgba(236,208,120,.99);
+}
+
+.container
+{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
 }
