@@ -53,13 +53,36 @@ body {
     border: none;
     background-color: #542437;
     color: #53777A;
+    border: solid 1px transparent;
+}
+
+.hashInactive
+{
+    background-color: #542437;
+    color: #53777A;
+}
+
+.hashActive
+{
+    background-color: #ECD078;
+    color: #C02942;
 }
 
 #hash
 {
     border: none;
-    background-color: #ECD078;
-    color: #C02942;
+    transition: background-color 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
+}
+
+
+#password:focus
+{
+    border: solid 1px #ECD078;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+/*    -moz-transition: none;*/
+/*    -webkit-transition: none;*/
 }
 
 /* Custom page footer */
