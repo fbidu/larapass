@@ -62,7 +62,7 @@ body {
     color: #53777A;
 }
 
-.hashActive
+.hashActive, #hash:hover
 {
     background-color: #ECD078;
     color: #C02942;
@@ -151,4 +151,24 @@ body {
     top: 50%;
     left: 50%;
     position: absolute;
+}
+
+#password::-webkit-input-placeholder
+{
+    color: #53777A;
+}
+
+#password:-moz-placeholder
+{
+    color: #53777A;
+}
+
+#password::-moz-placeholder
+{
+    color: #53777A;
+}
+
+#password:-ms-input-placeholder
+{  
+    color: #53777A;
 }
