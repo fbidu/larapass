@@ -18,7 +18,7 @@
         <div class="input-group input-group-lg">
             <input type="text" class="form-control" id="password" placeholder="Password">
             <span class="input-group-btn">
-                <button class="btn btn-default" type="button" id="hash">Hash!</button>
+                <button class="btn btn-default hashInactive" type="button" id="hash">Hash!</button>
             </span>
         </div>
             <div><input type="text" id="hash-val" readonly="true" data-toggle="tooltip" data-trigger="focus" data-placement="bottom" title="Press CTRL+C to copy" /></div>
@@ -44,6 +44,19 @@
                 });
 
         });
+
+        $("#password").on("focus", function()
+            {
+                $("#hash").addClass("hashActive");
+                $("#hash").removeClass("hashInactive");
+            });
+
+        $("#password").on("focusout", function()
+            {
+                $("#hash").removeClass("hashActive");
+                $("#hash").addClass("hashInactive");
+            });
+
 
         $("#hash-val").on("click", function()
         {
