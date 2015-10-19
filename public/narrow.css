@@ -56,13 +56,7 @@ body {
     border: solid 1px transparent;
 }
 
-.hashInactive
-{
-    background-color: #542437;
-    color: #53777A;
-}
-
-.hashActive, #hash:hover
+.hashInactive, .hashActive, #hash:hover
 {
     background-color: #ECD078;
     color: #C02942;
@@ -74,7 +68,7 @@ body {
     transition: background-color 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
 }
 
-
+#password:hover,
 #password:focus
 {
     border: solid 1px #ECD078;
