@@ -45,6 +45,19 @@
 
         });
 
+        $("#password").keypress(function (e)
+            {
+                if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13))
+                {
+                    $("#hash").click();
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            });
+
         $("#password").on("focus", function()
             {
                 $("#hash").addClass("hashActive");
